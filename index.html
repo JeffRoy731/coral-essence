@@ -532,6 +532,92 @@
             opacity: 0.6;
         }
 
+        /* Selection Overview Section */
+        .selection-section {
+            margin: 60px 0;
+            scroll-margin-top: 80px;
+        }
+
+        .selection-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .selection-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #f7931e 0%, #ff6b35 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .selection-header p {
+            color: #a0c4d9;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .selection-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 2px solid rgba(247,147,30,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(247,147,30,0.25);
+        }
+
+        .selection-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .selection-feature {
+            background: linear-gradient(145deg, rgba(247,147,30,0.15) 0%, rgba(255,107,53,0.1) 100%);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(247,147,30,0.3);
+            text-align: center;
+        }
+
+        .selection-feature h4 {
+            color: #f7931e;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .selection-feature p {
+            color: #a0c4d9;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (min-width: 768px) {
+            .selection-gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .gallery-image {
+                height: 280px;
+            }
+        }
+
         @media (max-width: 768px) {
             .logo {
                 max-width: 280px;
@@ -575,6 +661,7 @@
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#selection">Our Selection</a></li>
             <li><a href="#lps">LPS Corals</a></li>
             <li><a href="#sps">SPS Corals</a></li>
             <li><a href="#soft">Soft Corals</a></li>
@@ -609,6 +696,41 @@
                 <p>Local shops have to cover rent, staff, and shipping losses. Because I do this from home as a hobbyist, I pass the savings to you!</p>
             </div>
         </section>
+
+        <!-- SELECTION OVERVIEW SECTION -->
+        <section class="selection-section" id="selection">
+            <div class="selection-header">
+                <h2>Our Current Selection</h2>
+                <p>Take a look at what's growing in our frag tanks right now. From vibrant acans and flowing euphyllia to colourful zoanthids and rare SPS pieces - we've got something for every reef keeper. Stock changes regularly as corals sell and new pieces are grown out, so get in touch to see what's available.</p>
+            </div>
+
+            <div class="selection-gallery">
+                <img src="fragtank1.jpg" alt="Coral frag tank showing variety of LPS, SPS and soft corals under blue lighting" class="gallery-image">
+                <img src="fragtank2.jpg" alt="Coral selection including montiporas, leathers, torches and colourful acans" class="gallery-image">
+                <img src="fragtank3.jpg" alt="Colourful coral frags including acans, euphyllia, SPS and zoanthids" class="gallery-image">
+            </div>
+
+            <div class="selection-features">
+                <div class="selection-feature">
+                    <h4>Wide Variety</h4>
+                    <p>LPS, SPS, and soft corals all grown in the same stable system - something for beginners through to experienced reefers.</p>
+                </div>
+                <div class="selection-feature">
+                    <h4>Tank-Raised</h4>
+                    <p>All frags are grown out in my own tanks, meaning they're already adapted to home aquarium conditions.</p>
+                </div>
+                <div class="selection-feature">
+                    <h4>Healthy & Thriving</h4>
+                    <p>What you see is what you get - real photos of actual stock, not generic images. Every piece is healthy and ready for your tank.</p>
+                </div>
+                <div class="selection-feature">
+                    <h4>Regular Updates</h4>
+                    <p>New frags added regularly as colonies grow. Follow us on Facebook or message for the latest availability.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="coral-divider">🪸 🌊 🪸 🌊 🪸</div>
 
         <!-- LPS CORALS SECTION -->
         <section class="coral-section" id="lps">
