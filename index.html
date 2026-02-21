@@ -532,92 +532,6 @@
             opacity: 0.6;
         }
 
-        /* Selection Overview Section */
-        .selection-section {
-            margin: 60px 0;
-            scroll-margin-top: 80px;
-        }
-
-        .selection-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .selection-header h2 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            background: linear-gradient(135deg, #f7931e 0%, #ff6b35 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .selection-header p {
-            color: #a0c4d9;
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
-        }
-
-        .selection-gallery {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            border-radius: 20px;
-            border: 2px solid rgba(247,147,30,0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .gallery-image:hover {
-            transform: scale(1.02);
-            box-shadow: 0 20px 50px rgba(247,147,30,0.25);
-        }
-
-        .selection-features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .selection-feature {
-            background: linear-gradient(145deg, rgba(247,147,30,0.15) 0%, rgba(255,107,53,0.1) 100%);
-            padding: 25px;
-            border-radius: 15px;
-            border: 1px solid rgba(247,147,30,0.3);
-            text-align: center;
-        }
-
-        .selection-feature h4 {
-            color: #f7931e;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .selection-feature p {
-            color: #a0c4d9;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        @media (min-width: 768px) {
-            .selection-gallery {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .gallery-image {
-                height: 280px;
-            }
-        }
-
         @media (max-width: 768px) {
             .logo {
                 max-width: 280px;
@@ -661,7 +575,6 @@
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#selection">Our Selection</a></li>
             <li><a href="#lps">LPS Corals</a></li>
             <li><a href="#sps">SPS Corals</a></li>
             <li><a href="#soft">Soft Corals</a></li>
@@ -697,41 +610,6 @@
             </div>
         </section>
 
-        <!-- SELECTION OVERVIEW SECTION -->
-        <section class="selection-section" id="selection">
-            <div class="selection-header">
-                <h2>Our Current Selection</h2>
-                <p>Take a look at what's growing in our frag tanks right now. From vibrant acans and flowing euphyllia to colourful zoanthids and rare SPS pieces - we've got something for every reef keeper. Stock changes regularly as corals sell and new pieces are grown out, so get in touch to see what's available.</p>
-            </div>
-
-            <div class="selection-gallery">
-                <img src="fragtank1.jpg" alt="Coral frag tank showing variety of LPS and soft corals" class="gallery-image">
-                <img src="fragtank2.jpg" alt="Coral selection including montiporas, leathers and torches" class="gallery-image">
-                <img src="fragtank3.jpg" alt="Colourful coral frags including acans, SPS and zoanthids" class="gallery-image">
-            </div>
-
-            <div class="selection-features">
-                <div class="selection-feature">
-                    <h4>Wide Variety</h4>
-                    <p>LPS, SPS, and soft corals all grown in the same stable system - something for beginners through to experienced reefers.</p>
-                </div>
-                <div class="selection-feature">
-                    <h4>Tank-Raised</h4>
-                    <p>All frags are grown out in my own tanks, meaning they're already adapted to home aquarium conditions.</p>
-                </div>
-                <div class="selection-feature">
-                    <h4>Healthy & Thriving</h4>
-                    <p>What you see is what you get - real photos of actual stock, not generic images. Every piece is healthy and ready for your tank.</p>
-                </div>
-                <div class="selection-feature">
-                    <h4>Regular Updates</h4>
-                    <p>New frags added regularly as colonies grow. Follow us on Facebook or message for the latest availability.</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="coral-divider">🪸 🌊 🪸 🌊 🪸</div>
-
         <!-- LPS CORALS SECTION -->
         <section class="coral-section" id="lps">
             <div class="section-header lps">
@@ -742,7 +620,7 @@
 
             <div class="coral-grid">
                 <div class="coral-card lps">
-                    <img src="torchcoral.JPG" alt="Torch Coral" class="coral-image">
+                    <img src="torch-coral.jpeg" alt="Torch Coral" class="coral-image">
                     <div class="coral-info">
                         <h3>Torch Coral</h3>
                         <span class="care-level care-moderate">Moderate Care</span>
@@ -755,7 +633,7 @@
                 </div>
 
                 <div class="coral-card lps">
-                    <img src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=400&h=300&fit=crop" alt="Hammer Coral" class="coral-image">
+                    <img src="coral-essence-website/hammercoral.jpg" alt="Hammer Coral" class="coral-image">
                     <div class="coral-info">
                         <h3>Hammer Coral</h3>
                         <span class="care-level care-moderate">Moderate Care</span>
@@ -768,7 +646,7 @@
                 </div>
 
                 <div class="coral-card lps">
-                    <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=400&h=300&fit=crop" alt="Frogspawn Coral" class="coral-image">
+                    <img src="coral-essence-website/frogspawncoral.jpg" alt="Frogspawn Coral" class="coral-image">
                     <div class="coral-info">
                         <h3>Frogspawn Coral</h3>
                         <span class="care-level care-moderate">Moderate Care</span>
@@ -794,7 +672,7 @@
                 </div>
 
                 <div class="coral-card lps">
-                    <img src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=400&h=300&fit=crop" alt="Brain Coral" class="coral-image">
+                    <img src="coral-essence-website/braincoral.jpg" alt="Brain Coral" class="coral-image">
                     <div class="coral-info">
                         <h3>Brain Coral</h3>
                         <span class="care-level care-easy">Easy Care</span>
@@ -807,7 +685,7 @@
                 </div>
 
                 <div class="coral-card lps">
-                    <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?w=400&h=300&fit=crop" alt="Duncan Coral" class="coral-image">
+                    <img src="coral-essence-website/duncancoral.jpg" alt="Duncan Coral" class="coral-image">
                     <div class="coral-info">
                         <h3>Duncan Coral</h3>
                         <span class="care-level care-easy">Easy Care</span>
@@ -833,7 +711,7 @@
 
             <div class="coral-grid">
                 <div class="coral-card sps">
-                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop" alt="Acropora Coral" class="coral-image">
+                    <img src="coral-essence-website/acropora.jpg" alt="Acropora Coral" class="coral-image" style="object-fit: contain; background: #000;">
                     <div class="coral-info">
                         <h3>Acropora</h3>
                         <span class="care-level care-expert">Expert Care</span>
@@ -924,7 +802,7 @@
 
             <div class="coral-grid">
                 <div class="coral-card soft">
-                    <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=400&h=300&fit=crop" alt="Zoanthids" class="coral-image">
+                    <img src="coral-essence-website/zoanthids.jpg" alt="Zoanthids" class="coral-image">
                     <div class="coral-info">
                         <h3>Zoanthids & Palythoa</h3>
                         <span class="care-level care-easy">Easy Care</span>
@@ -963,7 +841,7 @@
                 </div>
 
                 <div class="coral-card soft">
-                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop" alt="GSP Coral" class="coral-image">
+                    <img src="coral-essence-website/gsp.jpg" alt="GSP Coral" class="coral-image">
                     <div class="coral-info">
                         <h3>Green Star Polyps (GSP)</h3>
                         <span class="care-level care-easy">Easy Care</span>
@@ -976,7 +854,7 @@
                 </div>
 
                 <div class="coral-card soft">
-                    <img src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=400&h=300&fit=crop" alt="Xenia Coral" class="coral-image">
+                    <img src="coral-essence-website/pulsingxenia.jpg" alt="Xenia Coral" class="coral-image">
                     <div class="coral-info">
                         <h3>Pulsing Xenia</h3>
                         <span class="care-level care-easy">Easy Care</span>
@@ -989,7 +867,7 @@
                 </div>
 
                 <div class="coral-card soft">
-                    <img src="kenya.JPG" alt="Kenya Tree" class="coral-image">
+                    <img src="kenya-tree.jpeg" alt="Kenya Tree" class="coral-image">
                     <div class="coral-info">
                         <h3>Kenya Tree</h3>
                         <span class="care-level care-easy">Easy Care</span>
